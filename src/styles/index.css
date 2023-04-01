@@ -11,3 +11,10 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+.css-1nztzxj {
+    background: linear-gradient(90deg, rgb(109, 158, 231) 12.5%, rgb(173, 191, 227) 26.04%, rgb(240, 201, 180) 39.06%, rgb(244, 186, 110) 56.96%, rgb(255, 193, 120) 70.83%, rgb(229, 131, 52) 92.71%);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
