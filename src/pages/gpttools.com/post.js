@@ -24,12 +24,22 @@ const PhiiluCom = () => {
   const title = searchParams.get("title");
   const date = searchParams.get("date");
   const readTime = searchParams.get("readTime");
+  // url=https://google.com&title=New%20AI%20Tools%202023&background=linear-gradient%2890deg%2C%20%236D9EE7%2012.5%25%2C%20%23ADBFE3%2026.04%25%2C%20%23F0C9B4%2039.06%25%2C%20%23F4BA6E%2056.96%25%2C%20%23FFC178%2070.83%25%2C%20%23E58334%2092.71%25%29%3B&color=%23000000
+  const background = searchParams.get("background");
+  const color = searchParams.get("color");
+  
+  console.log(background, color);
+  const subcontainerBackground = `.${"css-1nztzxj"} { background: ${background}}`
+        
 
   return (
     <>
       <GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+      <style>
+        {subcontainerBackground}
+      </style>
       <div
-        className="relative flex flex-col items-center justify-center p-16 text-gray-100 shadow-md gap-14 css-1nztzxj"
+        className="relative flex flex-col items-center justify-center p-16 text-gray-100 shadow-md gap-14 css-1nztzxj "
         style={{ width: 1200, height: 630 }}
       >
         <div className="max-w-screen-lg space-y-1 text-center">
